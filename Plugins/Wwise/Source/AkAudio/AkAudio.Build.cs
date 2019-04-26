@@ -246,7 +246,8 @@ public class AkAudio : ModuleRules
 #endif
             akPlatformLibDir.Add(tempDir);
             string LibFolder = (Target.Platform == UnrealTargetPlatform.Win32) ? "x86" : "x64";
-            PublicLibraryPaths.Add("$(DXSDK_DIR)" + Path.DirectorySeparatorChar + "Lib" + Path.DirectorySeparatorChar + LibFolder);
+            // HACK
+            //PublicLibraryPaths.Add("$(DXSDK_DIR)" + Path.DirectorySeparatorChar + "Lib" + Path.DirectorySeparatorChar + LibFolder);
 
 			if (BuildConfig.bBuildEditor == true)
             {
@@ -427,16 +428,16 @@ public class AkAudio : ModuleRules
 
 		if (Target.Platform == UnrealTargetPlatform.Mac)
 		{
-			PublicAdditionalFrameworks.Add(new UEBuildFramework("AudioUnit"));
-			PublicAdditionalFrameworks.Add(new UEBuildFramework("AudioToolbox"));
-			PublicAdditionalFrameworks.Add(new UEBuildFramework("CoreAudio"));
+			PublicAdditionalFrameworks.Add(new Framework("AudioUnit"));
+			PublicAdditionalFrameworks.Add(new Framework("AudioToolbox"));
+			PublicAdditionalFrameworks.Add(new Framework("CoreAudio"));
 			AddWwiseLib(Target, "AkAACDecoder");
 		}
 
 		if (Target.Platform == UnrealTargetPlatform.IOS)
 		{
-			PublicAdditionalFrameworks.Add(new UEBuildFramework("AudioToolbox"));
-			PublicAdditionalFrameworks.Add(new UEBuildFramework("CoreAudio"));
+			PublicAdditionalFrameworks.Add(new Framework("AudioToolbox"));
+			PublicAdditionalFrameworks.Add(new Framework("CoreAudio"));
 			AddWwiseLib(Target, "AkAACDecoder");
 		}
 
