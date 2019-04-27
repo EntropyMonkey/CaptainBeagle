@@ -46,7 +46,7 @@ void ASubmarinePawn::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 void ASubmarinePawn::MoveUpDown(float value)
 {
-	const FVector position = GetTransform()
+	AddMovementInput(FVector(0.0f, 0.0f, 1.0f), value * m_speed);
 }
 
 void ASubmarinePawn::MoveRightLeft(float value)
