@@ -8,6 +8,9 @@
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{383A364C-8451-438B-B528-045699C723FD}" WorkUnitID="{B3B02865-B647-433E-8F38-5D40A111936C}"/>
 						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+							<ObjectRef Name="Aluminium_Tank" ID="{0D20C91A-F750-47E0-AE32-00E5F2AA1272}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
 					</ReferenceList>
 				</Bus>
 			</ChildrenList>

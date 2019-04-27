@@ -54,6 +54,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Notstop" ID="{A9F58484-74E7-4117-A1DB-F2423860CBA9}">
+					<ChildrenList>
+						<Action Name="" ID="{464A472B-4C60-43E6-849B-706ABB59585A}" ShortID="150289175">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EngineStop" ID="{E2D1BF67-D651-46DB-97AD-3D1CE7BB3AA7}" WorkUnitID="{5771DD11-D97F-455B-8C1C-7A5071971BE4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F1EB1193-203F-487C-A12F-2CE23DDBB027}" ShortID="763818538">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="0.4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EngineStart" ID="{2A012021-490B-43DB-86ED-D4ED7CDE0971}" WorkUnitID="{5771DD11-D97F-455B-8C1C-7A5071971BE4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5885F78C-3019-4859-9C6F-62B5C5EA330C}" ShortID="9096835">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="0.4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SchraubenSystem" ID="{F348F358-3EA7-439C-9663-FCCD137B3742}" WorkUnitID="{5771DD11-D97F-455B-8C1C-7A5071971BE4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
