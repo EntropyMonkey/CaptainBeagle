@@ -39,18 +39,14 @@ void ASubmarinePawn::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAxis("MoveUpDown", this, &ASubmarinePawn::MoveUpDown);
 	PlayerInputComponent->BindAxis("MoveRightLeft", this, &ASubmarinePawn::MoveRightLeft);
 
-// 	PlayerInputComponent->BindTouch(IE_Pressed, this, &ASubmarinePawn::TouchStarted);
-// 	PlayerInputComponent->BindTouch(IE_Released, this, &ASubmarinePawn::TouchStopped);
 
 }
 
 void ASubmarinePawn::MoveUpDown(float value)
 {
-	AddMovementInput(FVector(0.0f, 0.0f, 1.0f), value * m_speed);
 }
 
 void ASubmarinePawn::MoveRightLeft(float value)
 {
-	AddMovementInput(FVector(1.0f, 0.0f, 0.0f), value * m_speed);
 }
 
