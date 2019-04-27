@@ -81,7 +81,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="SchraubenSystem" ID="{F348F358-3EA7-439C-9663-FCCD137B3742}" WorkUnitID="{5771DD11-D97F-455B-8C1C-7A5071971BE4}"/>
+									<ObjectRef Name="Schiffschraube" ID="{B34B6B44-2C57-43A7-8D2D-BE037B5926F3}" WorkUnitID="{5771DD11-D97F-455B-8C1C-7A5071971BE4}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
