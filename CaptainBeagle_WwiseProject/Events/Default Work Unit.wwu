@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{E25C8DBB-1994-420B-B036-7CA62764B70D}" SchemaVersion="94">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{E25C8DBB-1994-420B-B036-7CA62764B70D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{E25C8DBB-1994-420B-B036-7CA62764B70D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Engine" ID="{61690CEF-9ABA-4947-ACBE-B5BF67C91092}">
+					<ChildrenList>
+						<Action Name="" ID="{E5CE0E76-91DB-47D1-BAB3-CB9786D3CD92}" ShortID="294406175">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EngineSystem" ID="{82A00311-6BFB-46EE-944D-227F5494B658}" WorkUnitID="{5771DD11-D97F-455B-8C1C-7A5071971BE4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5DF08190-2586-47D7-9E2D-AA249612B0EA}" ShortID="149241827">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SchraubenSystem" ID="{F348F358-3EA7-439C-9663-FCCD137B3742}" WorkUnitID="{5771DD11-D97F-455B-8C1C-7A5071971BE4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayAlarm" ID="{EB9BA66D-872F-4C0C-9BC2-8D42B6CC5400}">
+					<ChildrenList>
+						<Action Name="" ID="{F56EC520-5394-4982-B66E-7827DC4FA9C4}" ShortID="977564597">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AlarmClock" ID="{18C289BB-077E-4C43-9775-9230484B956D}" WorkUnitID="{5771DD11-D97F-455B-8C1C-7A5071971BE4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopAlarm" ID="{40124822-877F-43D2-AD54-C3EDC16CF8C7}">
+					<ChildrenList>
+						<Action Name="" ID="{EF46B74F-BFA1-4B23-BC05-16AB37DD2D03}" ShortID="959328033">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Click" ID="{F8E6D81C-7296-4F6C-A490-C84505D6EE27}" WorkUnitID="{5771DD11-D97F-455B-8C1C-7A5071971BE4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9DCC7DCE-5618-4374-8FF5-D362D2BCA46D}" ShortID="963965729">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="0.4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AlarmClock" ID="{18C289BB-077E-4C43-9775-9230484B956D}" WorkUnitID="{5771DD11-D97F-455B-8C1C-7A5071971BE4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

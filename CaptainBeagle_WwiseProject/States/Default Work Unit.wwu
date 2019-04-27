@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{70325854-2ABD-4C17-B40F-BA0BC4A156EF}" SchemaVersion="94">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{70325854-2ABD-4C17-B40F-BA0BC4A156EF}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{70325854-2ABD-4C17-B40F-BA0BC4A156EF}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Engine" ID="{2DA27F56-68CD-4D7F-B4C2-78510ED71565}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.5"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{F1F87CB3-BE0C-4391-9346-8F5166A16EE6}"/>
+						<State Name="StartEngine" ID="{273D34C5-B6BE-4432-B796-A985477204D5}"/>
+						<State Name="StopEngine" ID="{60185986-0638-4DD0-9913-EFE71232F718}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Schraube" ID="{74E99E24-C867-4F94-8994-044E811ACA77}">
+					<ChildrenList>
+						<State Name="None" ID="{2F8C16E2-95CC-4BD9-8E2D-F9E486946817}"/>
+						<State Name="StartSchraube" ID="{163AA6EC-6A77-492F-818A-BE594813035D}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>
