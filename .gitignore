@@ -76,6 +76,7 @@ Plugins/*/Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 Content/StarterContent/
+CaptainBeagle_WwiseProject/.cache/
 Plugins/Wwise/ThirdParty/Android_arm64-v8a/Debug/bin/IntegrationDemo/
 Plugins/Wwise/ThirdParty/Android_arm64-v8a/Debug/bin/IntegrationDemoMotion/IntegrationDemoMotion.apk
 Plugins/Wwise/ThirdParty/Android_arm64-v8a/Profile/bin/IntegrationDemo/IntegrationDemo.apk
@@ -102,3 +103,4 @@ Plugins/Wwise/ThirdParty/Android_armeabi-v7a/Debug/bin/IntegrationDemo/Integrati
 Plugins/Wwise/ThirdParty/Android_arm64-v8a/Release/bin/IntegrationDemoMotion/IntegrationDemoMotion.apk
 Plugins/Wwise/Wwise_UE4_Integration_ja.chm
 Plugins/Wwise/Wwise_UE4_Integration.chm
+
