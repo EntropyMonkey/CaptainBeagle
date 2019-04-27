@@ -378,7 +378,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-7</Value>
+								<Value>-1</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -402,19 +402,20 @@
 				</Sound>
 				<RandomSequenceContainer Name="Ambient" ID="{555264AD-0FFB-4E85-8C43-E36A79D80955}" ShortID="644848135">
 					<PropertyList>
+						<Property Name="3DPosition" Type="int16" Value="2"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
 									<Modifier Name="" ID="{491B6D45-BC85-4DF9-8587-7D660E21C375}">
 										<PropertyList>
-											<Property Name="Enabled" Type="bool" Value="True"/>
 											<Property Name="Min" Type="Real64" Value="-3284"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
-						<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
 						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismLoopCount" Type="int32" Value="4">
 							<ModifierList>
@@ -428,7 +429,11 @@
 							</ModifierList>
 						</Property>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -442,11 +447,162 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Silence" ID="{3E701260-2ADD-4421-A32E-0917CCEA750E}" ShortID="875699304">
+						<Sound Name="whale" ID="{2A80DC0A-DFFE-4D7D-8E16-26F4B060D29F}" ShortID="822770586">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="2"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-350</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B5C84FE8-E189-409A-B8F2-37FBDF990F25}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-2000"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{67BCA671-44A6-43E2-977F-B3CE01150851}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-10"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise_Time_Stretch_(Custom)" ID="{C14DD128-4CAE-43CE-BCF7-71303E820C22}" ShortID="704760170" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+											<PropertyList>
+												<Property Name="TimeStretchRandom" Type="Real32" Value="20"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="whale" ID="{223BB482-4809-4592-B452-C1C2B67217FA}" ShortID="386147942">
+									<Language>SFX</Language>
+									<AudioFile>whale.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{7A48B3BA-92CE-49A4-BB00-5E02F7C81B0E}">
+									<PropertyList>
+										<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="whale_Path" ID="{2C0CCA7A-E5FF-44B4-BA09-8BB45EA3C248}">
+											<PointList>
+												<Point>
+													<XPos>-74.68354</XPos>
+													<YPos>65.28662</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="whale_Path_01" ID="{33DBDE37-20C3-4733-9C7C-BC3676274C65}">
+											<PointList>
+												<Point>
+													<XPos>-77.21519</XPos>
+													<YPos>9.87261</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="whale_Path_02" ID="{445C38B7-590F-4832-926C-CDCC33842432}">
+											<PointList>
+												<Point>
+													<XPos>-74.68354</XPos>
+													<YPos>-51.27389</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="whale_Path_03" ID="{736A0265-45C6-4237-89DD-57B18292C6EE}">
+											<PointList>
+												<Point>
+													<XPos>-6.96203</XPos>
+													<YPos>-83.75796</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="whale_Path_04" ID="{3A482D24-78DD-4928-BF9C-D54D429FF5B7}">
+											<PointList>
+												<Point>
+													<XPos>79.11392</XPos>
+													<YPos>-53.82166</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="whale_Path_05" ID="{94125D33-760D-43B8-A407-2A4C30F82ACE}">
+											<PointList>
+												<Point>
+													<XPos>84.17722</XPos>
+													<YPos>18.78981</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="whale_Path_06" ID="{A745CDB9-F2F7-422F-BE68-240622FE48E6}">
+											<PointList>
+												<Point>
+													<XPos>71.51899</XPos>
+													<YPos>67.19745</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="whale_Path_07" ID="{7379D0D7-B740-4657-802E-4B280C16ADDB}">
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>100</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="whale" ID="{223BB482-4809-4592-B452-C1C2B67217FA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="silence" ID="{0CA1DA8B-BC80-454B-99B2-778E3B94627B}" ShortID="682548501">
 							<PropertyList>
 								<Property Name="Weight" Type="Real64">
 									<ValueList>
-										<Value>29</Value>
+										<Value>18</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -459,45 +615,114 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<SourcePlugin Name="Wwise Silence" ID="{BDF1A5B2-41BB-4184-A3C8-238911E7C450}" ShortID="157708452" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+								<SourcePlugin Name="Wwise Silence" ID="{76E51D6D-FC11-4422-978E-3E16D97F3590}" ShortID="857384285" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
 									<PropertyList>
-										<Property Name="Length" Type="Real32" Value="10"/>
-										<Property Name="LengthMax" Type="Real32" Value="10"/>
+										<Property Name="LengthMax" Type="Real32" Value="5"/>
 									</PropertyList>
 									<Language>SFX</Language>
 								</SourcePlugin>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Wwise Silence" ID="{BDF1A5B2-41BB-4184-A3C8-238911E7C450}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="458626__cclaretc__whale" ID="{A8835239-5BD7-4EC2-B351-6E5A5926E4D8}" ShortID="363145201">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="458626__cclaretc__whale" ID="{CBF51912-BB6F-473D-9B20-7CA590B753E9}" ShortID="1033074598">
-									<Language>SFX</Language>
-									<AudioFile>458626__cclaretc__whale.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="458626__cclaretc__whale" ID="{CBF51912-BB6F-473D-9B20-7CA590B753E9}" Platform="Linked"/>
+								<ActiveSource Name="Wwise Silence" ID="{76E51D6D-FC11-4422-978E-3E16D97F3590}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
 					<PositioningInfo>
 						<Panner Name="" ID="{057E40D1-4EE0-46BB-BE9C-939C1827E4B9}">
 							<PropertyList>
-								<Property Name="PanX" Type="Real64" Value="-0.856531049250523"/>
-								<Property Name="PanY" Type="Real64" Value="-0.911161731207287"/>
+								<Property Name="PanX" Type="Real64" Value="-74.9464668094218"/>
+								<Property Name="PanY" Type="Real64" Value="-72.4373576309795"/>
 							</PropertyList>
 						</Panner>
+						<Position Name="" ID="{62D18A47-2DC1-4AE2-9D65-17BA314B1866}">
+							<PropertyList>
+								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="Ambient_Path" ID="{66FF4C4E-234E-4FA7-82BC-193453A7EF3A}">
+									<PointList>
+										<Point>
+											<XPos>-78.48102</XPos>
+											<YPos>76.75159</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Ambient_Path_01" ID="{4CFFD54B-4FEF-4F09-9682-E29986DC34E3}">
+									<PointList>
+										<Point>
+											<XPos>-89.24051</XPos>
+											<YPos>57.64331</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Ambient_Path_02" ID="{88774C0A-D97E-4F44-BF17-EDD5EE164A8A}">
+									<PointList>
+										<Point>
+											<XPos>-79.11392</XPos>
+											<YPos>-34.71338</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Ambient_Path_03" ID="{974FF1B0-76FD-4186-A42B-F22401909988}">
+									<PointList>
+										<Point>
+											<XPos>-56.96203</XPos>
+											<YPos>-64.01274</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Ambient_Path_04" ID="{DB7599C0-BB37-44EA-A120-E13447442908}">
+									<PointList>
+										<Point>
+											<XPos>9.49367</XPos>
+											<YPos>-76.75159</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Ambient_Path_05" ID="{EF532010-E177-4ACD-9CCC-F28CFABB6E77}">
+									<PointList>
+										<Point>
+											<XPos>63.29114</XPos>
+											<YPos>-53.82166</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Ambient_Path_06" ID="{78D4444A-E832-4BB0-9FA1-E54BB8A842E6}">
+									<PointList>
+										<Point>
+											<XPos>72.78481</XPos>
+											<YPos>7.32484</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Ambient_Path_07" ID="{77075537-7FE2-42DB-A3F4-4662432924CD}">
+									<PointList>
+										<Point>
+											<XPos>65.18987</XPos>
+											<YPos>52.54777</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
 					</PositioningInfo>
 				</RandomSequenceContainer>
 			</ChildrenList>
