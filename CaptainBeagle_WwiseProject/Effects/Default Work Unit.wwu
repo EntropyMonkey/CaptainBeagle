@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{919971D1-DB39-4C57-96D5-A5AA6BF116F2}" SchemaVersion="94">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{919971D1-DB39-4C57-96D5-A5AA6BF116F2}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{919971D1-DB39-4C57-96D5-A5AA6BF116F2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="Schiffschraube_Wwise_Time_Stretch" ID="{90B6F26B-41F8-44F7-9A1A-0F9924C94660}" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+					<PropertyList>
+						<Property Name="OutputGain" Type="Real32" Value="2"/>
+						<Property Name="TimeStretch" Type="Real32" Value="30">
+							<RTPCList>
+								<RTPC Name="" ID="{B30E4084-BADA-4E76-9062-4C8771E44AB2}" ShortID="985638153">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Accellerate" ID="{FB8F10CE-073E-40EE-BC67-822321EB4272}" WorkUnitID="{52077B2F-6405-45A7-A131-DF64548C766C}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{0D8CD5DC-AFBC-44BB-A485-8A88AA4F4E17}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="1"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>75</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>6</XPos>
+												<YPos>25</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>
