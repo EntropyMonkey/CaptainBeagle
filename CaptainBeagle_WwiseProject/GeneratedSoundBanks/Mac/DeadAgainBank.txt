@@ -1,0 +1,49 @@
+Event	ID	Name			Wwise Object Path	Notes
+	191424952	Notstop			\Default Work Unit\Notstop	
+	268529915	Engine			\Default Work Unit\Engine	
+	1152732452	StopAlarm			\Default Work Unit\StopAlarm	
+	3302140806	PlayAlarm			\Default Work Unit\PlayAlarm	
+	4095160042	Ambients			\Default Work Unit\Ambients	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	268529915	Engine			\Default Work Unit\Engine	
+	4069350568	Schraube			\Default Work Unit\Schraube	
+
+State	ID	Name	State Group			Notes
+	0	None	Engine			
+	1087172201	StartEngine	Engine			
+	3762828835	StopEngine	Engine			
+	0	None	Schraube			
+	1460194106	StartSchraube	Schraube			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	874936796	Accellerate			\Default Work Unit\Accellerate	
+	4140859072	MonsterStages			\Default Work Unit\MonsterStages	
+
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	475301504	Modulator LFO (Custom)				
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Effect plug-ins	ID	Name	Type				Notes
+	602546716	Room_Large	Wwise RoomVerb			
+	704760170	Wwise_Time_Stretch_(Custom)	Wwise Time Stretch			
+	1922234305	Schiffschraube_Wwise_Time_Stretch	Wwise Time Stretch			
+	3290519051	Aluminium_Tank	Wwise RoomVerb			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	857384285	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\silence\Wwise Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	90595530	EngineStop	Y:\CaptainBeagle\CaptainBeagle_WwiseProject\.cache\Mac\SFX\EngineStop_11170445.wem		\Actor-Mixer Hierarchy\Default Work Unit\EngineSystem\EngineStop		835124
+	265574609	Schraube	Y:\CaptainBeagle\CaptainBeagle_WwiseProject\.cache\Mac\SFX\slowsteamengine_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SchraubenSystem\Schiffschraube\Schraube		6752688
+	316727210	Engine_Idle	Y:\CaptainBeagle\CaptainBeagle_WwiseProject\.cache\Mac\SFX\EngineIdle_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\EngineSystem\EngineStart\EngineIdle\Engine_Idle		2646064
+	350209058	Click	Y:\CaptainBeagle\CaptainBeagle_WwiseProject\.cache\Mac\SFX\Click_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Click		124344
+	386147942	whale	Y:\CaptainBeagle\CaptainBeagle_WwiseProject\.cache\Mac\SFX\whale_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambient\whale		941644
+	649598248	EngineStart	Y:\CaptainBeagle\CaptainBeagle_WwiseProject\.cache\Mac\SFX\EngineStart_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\EngineSystem\EngineStart\Starter\EngineStart		557884
+	690914345	Eye_Stage1_start	Y:\CaptainBeagle\CaptainBeagle_WwiseProject\.cache\Mac\SFX\Eye_Stage1_start_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Eye_Stage1_start		416192
+	737303825	AlarmClock	Y:\CaptainBeagle\CaptainBeagle_WwiseProject\.cache\Mac\SFX\alarm-clock_5AE72BA2.wem		\Actor-Mixer Hierarchy\Default Work Unit\AlarmClock\AlarmClock		1631864
+	1019047120	Eye_Stage1_middle	Y:\CaptainBeagle\CaptainBeagle_WwiseProject\.cache\Mac\SFX\Eye_Stage1_middle_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Eye_Stage1_middle		300724
+	1073037191	Eye_Stage1_fade	Y:\CaptainBeagle\CaptainBeagle_WwiseProject\.cache\Mac\SFX\Eye_Stage1_fade_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monster\Eye_Stage1_fade		563660
+
