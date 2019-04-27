@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>D:\Work In Progress\Nordic Game Jam 19\CaptainBeagle\CaptainBeagle_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Work In Progress\Nordic Game Jam 19\CaptainBeagle\CaptainBeagle_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Work In Progress\Nordic Game Jam 19\CaptainBeagle\Content\Sounds\GeneratedSoundbanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Work In Progress\Nordic Game Jam 19\CaptainBeagle\CaptainBeagle_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3007423883" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\DeadAgainBank</ObjectPath>
+			<ShortName>DeadAgainBank</ShortName>
+			<Path>DeadAgainBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4095160042" Name="Ambients" ObjectPath="\Events\Default Work Unit\Ambients"/>
+				<Event Id="268529915" Name="Engine" ObjectPath="\Events\Default Work Unit\Engine"/>
+				<Event Id="191424952" Name="Notstop" ObjectPath="\Events\Default Work Unit\Notstop"/>
+				<Event Id="3302140806" Name="PlayAlarm" ObjectPath="\Events\Default Work Unit\PlayAlarm"/>
+				<Event Id="1152732452" Name="StopAlarm" ObjectPath="\Events\Default Work Unit\StopAlarm"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="90595530" Language="SFX">
+					<ShortName>EngineStop.wav</ShortName>
+					<Path>SFX\EngineStop_11170445.wem</Path>
+				</File>
+				<File Id="265574609" Language="SFX">
+					<ShortName>slowsteamengine.wav</ShortName>
+					<Path>SFX\slowsteamengine_D79FB2B7.wem</Path>
+				</File>
+				<File Id="316727210" Language="SFX">
+					<ShortName>EngineIdle.wav</ShortName>
+					<Path>SFX\EngineIdle_10C4C929.wem</Path>
+				</File>
+				<File Id="350209058" Language="SFX">
+					<ShortName>Click.wav</ShortName>
+					<Path>SFX\Click_10C4C929.wem</Path>
+				</File>
+				<File Id="386147942" Language="SFX">
+					<ShortName>whale.wav</ShortName>
+					<Path>SFX\whale_10C4C929.wem</Path>
+				</File>
+				<File Id="649598248" Language="SFX">
+					<ShortName>EngineStart.wav</ShortName>
+					<Path>SFX\EngineStart_10C4C929.wem</Path>
+				</File>
+				<File Id="690914345" Language="SFX">
+					<ShortName>Eye_Stage1_start.wav</ShortName>
+					<Path>SFX\Eye_Stage1_start_10C4C929.wem</Path>
+				</File>
+				<File Id="737303825" Language="SFX">
+					<ShortName>alarm-clock.wav</ShortName>
+					<Path>SFX\alarm-clock_5AE72BA2.wem</Path>
+				</File>
+				<File Id="1019047120" Language="SFX">
+					<ShortName>Eye_Stage1_middle.wav</ShortName>
+					<Path>SFX\Eye_Stage1_middle_D79FB2B7.wem</Path>
+				</File>
+				<File Id="1073037191" Language="SFX">
+					<ShortName>Eye_Stage1_fade.wav</ShortName>
+					<Path>SFX\Eye_Stage1_fade_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
