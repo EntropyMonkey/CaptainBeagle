@@ -725,6 +725,122 @@
 						</Position>
 					</PositioningInfo>
 				</RandomSequenceContainer>
+				<BlendContainer Name="Monster" ID="{32E3E2A0-71ED-4ACB-B10A-ADAC93B46E49}" ShortID="509296325">
+					<PropertyList>
+						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Eye_Stage1_fade" ID="{4CBF8282-B51C-4C3A-B68E-5431AB6DEDCC}" ShortID="326081307">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Eye_Stage1_fade" ID="{BC0D699A-353C-4094-B2EB-F98A40D4BE4C}" ShortID="1073037191">
+									<Language>SFX</Language>
+									<AudioFile>Eye_Stage1_fade.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Eye_Stage1_fade" ID="{BC0D699A-353C-4094-B2EB-F98A40D4BE4C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Eye_Stage1_middle" ID="{1117EFC4-B54D-421C-AC95-8837CD431428}" ShortID="128922610">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Eye_Stage1_middle" ID="{E1E0C6B9-341C-4CB5-BC16-18204C7EF35C}" ShortID="1019047120">
+									<Language>SFX</Language>
+									<AudioFile>Eye_Stage1_middle.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Eye_Stage1_middle" ID="{E1E0C6B9-341C-4CB5-BC16-18204C7EF35C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Eye_Stage1_start" ID="{A7E9932F-FF00-45A4-B22C-383DFCF84676}" ShortID="32849363">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Eye_Stage1_start" ID="{B9C0E4AC-6D44-48D1-9275-18B351FEAD9C}" ShortID="690914345">
+									<Language>SFX</Language>
+									<AudioFile>Eye_Stage1_start.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Eye_Stage1_start" ID="{B9C0E4AC-6D44-48D1-9275-18B351FEAD9C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<BlendTrackList>
+						<BlendTrack Name="New Blend Track" ID="{3DFABE50-8764-401A-86B8-CC3FB9B003A8}" ShortID="1045347423">
+							<PropertyList>
+								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="LayerCrossFadeControlInput">
+									<ObjectRef Name="MonsterStages" ID="{AA90A03E-D058-4AEE-9591-001FEE4FF825}" WorkUnitID="{52077B2F-6405-45A7-A131-DF64548C766C}"/>
+								</Reference>
+							</ReferenceList>
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="Eye_Stage1_start" ID="{A7E9932F-FF00-45A4-B22C-383DFCF84676}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>0</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>24.4224422442244</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="Eye_Stage1_middle" ID="{1117EFC4-B54D-421C-AC95-8837CD431428}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>23.8723872387239</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>66.6666666666667</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="Eye_Stage1_fade" ID="{4CBF8282-B51C-4C3A-B68E-5431AB6DEDCC}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>66.6666666666667</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>100</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+					</BlendTrackList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

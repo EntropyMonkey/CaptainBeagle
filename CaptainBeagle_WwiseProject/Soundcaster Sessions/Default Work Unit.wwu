@@ -31,6 +31,10 @@
 							<GameParameterRef Name="Accellerate" ID="{FB8F10CE-073E-40EE-BC67-822321EB4272}"/>
 							<Value>6</Value>
 						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MonsterStages" ID="{AA90A03E-D058-4AEE-9591-001FEE4FF825}"/>
+							<Value>58.5283828382838</Value>
+						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="StartEngine" ID="{273D34C5-B6BE-4432-B796-A985477204D5}"/>
