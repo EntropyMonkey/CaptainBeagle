@@ -18,6 +18,11 @@ void ASubmarinePawn::BeginPlay()
 	
 }
 
+void ASubmarinePawn::PossessedBy(AController* NewController)
+{
+	
+}
+
 // Called every frame
 void ASubmarinePawn::Tick(float DeltaTime)
 {
@@ -41,11 +46,11 @@ void ASubmarinePawn::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 void ASubmarinePawn::MoveUpDown(float value)
 {
-	AddMovementInput(FVector(0.0f, 0.0f, 1.0f), value);
+	const FVector position = GetTransform()
 }
 
 void ASubmarinePawn::MoveRightLeft(float value)
 {
-	AddMovementInput(FVector(1.0f, 0.0f, 0.0f), value);
+	AddMovementInput(FVector(1.0f, 0.0f, 0.0f), value * m_speed);
 }
 
