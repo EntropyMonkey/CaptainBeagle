@@ -29,12 +29,12 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Accellerate" ID="{FB8F10CE-073E-40EE-BC67-822321EB4272}"/>
-							<Value>0</Value>
+							<Value>6</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{F1F87CB3-BE0C-4391-9346-8F5166A16EE6}"/>
-						<CurrentStateRef Name="None" ID="{2F8C16E2-95CC-4BD9-8E2D-F9E486946817}"/>
+						<CurrentStateRef Name="StartEngine" ID="{273D34C5-B6BE-4432-B796-A985477204D5}"/>
+						<CurrentStateRef Name="StartSchraube" ID="{163AA6EC-6A77-492F-818A-BE594813035D}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
