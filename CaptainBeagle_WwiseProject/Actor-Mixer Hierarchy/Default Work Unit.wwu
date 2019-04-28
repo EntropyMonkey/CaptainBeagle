@@ -725,9 +725,14 @@
 						</Position>
 					</PositioningInfo>
 				</RandomSequenceContainer>
-				<BlendContainer Name="Monster" ID="{32E3E2A0-71ED-4ACB-B10A-ADAC93B46E49}" ShortID="509296325">
+				<BlendContainer Name="Monster_Alt" ID="{32E3E2A0-71ED-4ACB-B10A-ADAC93B46E49}" ShortID="509296325">
 					<PropertyList>
 						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -738,28 +743,13 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Eye_Stage1_fade" ID="{4CBF8282-B51C-4C3A-B68E-5431AB6DEDCC}" ShortID="326081307">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Eye_Stage1_fade" ID="{BC0D699A-353C-4094-B2EB-F98A40D4BE4C}" ShortID="1073037191">
-									<Language>SFX</Language>
-									<AudioFile>Eye_Stage1_fade.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Eye_Stage1_fade" ID="{BC0D699A-353C-4094-B2EB-F98A40D4BE4C}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Eye_Stage1_middle" ID="{1117EFC4-B54D-421C-AC95-8837CD431428}" ShortID="128922610">
+						<Sound Name="New Sound SFX" ID="{2714A855-48CB-4727-A3CC-7EE586352CBA}" ShortID="897633975">
 							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -770,16 +760,119 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Eye_Stage1_middle" ID="{E1E0C6B9-341C-4CB5-BC16-18204C7EF35C}" ShortID="1019047120">
+								<SourcePlugin Name="Wwise Synth One" ID="{C175AA67-0A7A-47C1-BCD3-8D3754C14451}" ShortID="237183636" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+									<PropertyList>
+										<Property Name="BaseFrequency" Type="Real32" Value="72">
+											<RTPCList>
+												<RTPC Name="" ID="{08F09EAD-36BB-46BA-B373-71654FF5EAA2}" ShortID="305899161">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorLfo Name="Modulator LFO (Custom)" ID="{DD154DAA-D495-407F-B171-8953D63FB71B}" ShortID="219060777">
+																	<PropertyList>
+																		<Property Name="LfoFrequency" Type="Real64" Value="1.2">
+																			<RTPCList>
+																				<RTPC Name="" ID="{A1AA92AA-B83C-4452-AEE9-4470E4DE07D6}" ShortID="205708765">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="MonsterStages" ID="{AA90A03E-D058-4AEE-9591-001FEE4FF825}" WorkUnitID="{52077B2F-6405-45A7-A131-DF64548C766C}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{9C655FC0-1DA4-4BE4-AC6D-FFC170F13687}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="5"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>1</YPos>
+																								<Flags>5</Flags>
+																								<SegmentShape>Exp3</SegmentShape>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>20000</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																</ModulatorLfo>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{C4A8AC4E-68EF-4CFC-9699-AB9F0F128CBE}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="5"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>26.91046</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>49.06536</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="NoiseLevel" Type="Real32" Value="-27">
+											<RTPCList>
+												<RTPC Name="" ID="{46539C70-CB81-4C8B-8164-930E549F85FE}" ShortID="198338267">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="MonsterStages" ID="{AA90A03E-D058-4AEE-9591-001FEE4FF825}" WorkUnitID="{52077B2F-6405-45A7-A131-DF64548C766C}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{5B921F18-D658-4E9D-B131-910BC908ED00}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-28.00484</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-0.61337</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Osc1Waveform" Type="int32" Value="2"/>
+										<Property Name="Osc2Waveform" Type="int32" Value="3"/>
+										<Property Name="OutputLevel" Type="Real32" Value="-5"/>
+										<Property Name="OverSampling" Type="bool" Value="False"/>
+									</PropertyList>
 									<Language>SFX</Language>
-									<AudioFile>Eye_Stage1_middle.wav</AudioFile>
-								</AudioFileSource>
+								</SourcePlugin>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Eye_Stage1_middle" ID="{E1E0C6B9-341C-4CB5-BC16-18204C7EF35C}" Platform="Linked"/>
+								<ActiveSource Name="Wwise Synth One" ID="{C175AA67-0A7A-47C1-BCD3-8D3754C14451}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Eye_Stage1_start" ID="{A7E9932F-FF00-45A4-B22C-383DFCF84676}" ShortID="32849363">
+						<Sound Name="New Sound SFX_01" ID="{D20176C3-B243-4595-82F3-739AA9506DF0}" ShortID="1031069021">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
@@ -789,18 +882,189 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Eye_Stage1_start" ID="{B9C0E4AC-6D44-48D1-9275-18B351FEAD9C}" ShortID="690914345">
+								<SourcePlugin Name="Wwise Synth One" ID="{25794488-BE5F-4A56-A221-3D3AE867599F}" ShortID="661174819" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+									<PropertyList>
+										<Property Name="BaseFrequency" Type="Real32" Value="993"/>
+										<Property Name="FmAmount" Type="Real32" Value="12.6"/>
+										<Property Name="NoiseLevel" Type="Real32" Value="-60"/>
+										<Property Name="Osc1Level" Type="Real32" Value="-35"/>
+										<Property Name="Osc1Waveform" Type="int32" Value="2"/>
+										<Property Name="Osc2Level" Type="Real32" Value="-78"/>
+										<Property Name="Osc2Waveform" Type="int32" Value="3"/>
+										<Property Name="OutputLevel" Type="Real32" Value="-5">
+											<RTPCList>
+												<RTPC Name="" ID="{99222F49-4218-4305-89F5-550EE49286EC}" ShortID="90084932">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<Custom>
+																<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{6AF761F2-3C8C-4078-98CB-EEA021DF66FB}" ShortID="5921881">
+																	<PropertyList>
+																		<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																	</PropertyList>
+																</ModulatorEnvelope>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{DE57DBE9-6A3C-4D9F-A742-BA775998E92F}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-96</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
 									<Language>SFX</Language>
-									<AudioFile>Eye_Stage1_start.wav</AudioFile>
-								</AudioFileSource>
+								</SourcePlugin>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Eye_Stage1_start" ID="{B9C0E4AC-6D44-48D1-9275-18B351FEAD9C}" Platform="Linked"/>
+								<ActiveSource Name="Wwise Synth One" ID="{25794488-BE5F-4A56-A221-3D3AE867599F}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="Stage1" ID="{BACB3D3A-8356-4AE7-84B6-D1F172998257}" ShortID="976331817">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Eye_Stage1_1" ID="{7735E4A7-1318-4789-8BF5-D8F2350F7E56}" ShortID="607495287">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Eye_Stage1_1" ID="{FB01F43B-AE80-408D-8D92-70D479EF1A5C}" ShortID="727144478">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.145243282498184"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.10167029774873"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.319535221496006"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.40522875816993"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Eye_Stage1_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Eye_Stage1_1" ID="{FB01F43B-AE80-408D-8D92-70D479EF1A5C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Stage2" ID="{E524C1F4-F604-4E18-9A37-0345AE3BE736}" ShortID="203327173">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Eye_Stage_2" ID="{D060E857-E43D-43EE-9D6C-31948C49C454}" ShortID="755597926">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Eye_Stage_2" ID="{49ACC565-5B8D-4D47-A391-C1B2C539B6FD}" ShortID="165186101">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.150960058097313"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.043131445170661"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.150960058097313"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.51284822076979"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Eye_Stage_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Eye_Stage_2" ID="{49ACC565-5B8D-4D47-A391-C1B2C539B6FD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Stage3" ID="{80ED7895-6B2D-42D2-BD96-5BDE51D23750}" ShortID="1061995980">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Eye_Stage_3" ID="{951920EF-C52B-44EA-92CB-6F5866A962F4}" ShortID="734789489">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Eye_Stage_3" ID="{574049E0-D371-40DA-8206-B6165B9E0C6E}" ShortID="320808056">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0862628903413217"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0862628903413212"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0862628903413217"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.49128249818446"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Eye_Stage_3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Eye_Stage_3" ID="{574049E0-D371-40DA-8206-B6165B9E0C6E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<BlendTrackList>
-						<BlendTrack Name="New Blend Track" ID="{3DFABE50-8764-401A-86B8-CC3FB9B003A8}" ShortID="1045347423">
+						<BlendTrack Name="MonsterStageBlendTrack" ID="{3DFABE50-8764-401A-86B8-CC3FB9B003A8}" ShortID="1045347423">
 							<PropertyList>
 								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
 							</PropertyList>
@@ -811,27 +1075,27 @@
 							</ReferenceList>
 							<BlendTrackAssocList>
 								<BlendTrackAssoc>
-									<ItemRef Name="Eye_Stage1_start" ID="{A7E9932F-FF00-45A4-B22C-383DFCF84676}"/>
+									<ItemRef Name="Stage1" ID="{BACB3D3A-8356-4AE7-84B6-D1F172998257}"/>
 									<CrossfadingInfo>
 										<LeftEdgePos>0</LeftEdgePos>
 										<LeftFadingMode>Automatic</LeftFadingMode>
-										<RightEdgePos>24.4224422442244</RightEdgePos>
+										<RightEdgePos>40.8693369086909</RightEdgePos>
 										<RightFadingMode>Automatic</RightFadingMode>
 									</CrossfadingInfo>
 								</BlendTrackAssoc>
 								<BlendTrackAssoc>
-									<ItemRef Name="Eye_Stage1_middle" ID="{1117EFC4-B54D-421C-AC95-8837CD431428}"/>
+									<ItemRef Name="Stage2" ID="{E524C1F4-F604-4E18-9A37-0345AE3BE736}"/>
 									<CrossfadingInfo>
-										<LeftEdgePos>23.8723872387239</LeftEdgePos>
+										<LeftEdgePos>11.7274227172717</LeftEdgePos>
 										<LeftFadingMode>Automatic</LeftFadingMode>
-										<RightEdgePos>66.6666666666667</RightEdgePos>
+										<RightEdgePos>83.4325932343234</RightEdgePos>
 										<RightFadingMode>Automatic</RightFadingMode>
 									</CrossfadingInfo>
 								</BlendTrackAssoc>
 								<BlendTrackAssoc>
-									<ItemRef Name="Eye_Stage1_fade" ID="{4CBF8282-B51C-4C3A-B68E-5431AB6DEDCC}"/>
+									<ItemRef Name="Stage3" ID="{80ED7895-6B2D-42D2-BD96-5BDE51D23750}"/>
 									<CrossfadingInfo>
-										<LeftEdgePos>66.6666666666667</LeftEdgePos>
+										<LeftEdgePos>52.6072607260726</LeftEdgePos>
 										<LeftFadingMode>Automatic</LeftFadingMode>
 										<RightEdgePos>100</RightEdgePos>
 										<RightFadingMode>Automatic</RightFadingMode>
@@ -841,6 +1105,123 @@
 						</BlendTrack>
 					</BlendTrackList>
 				</BlendContainer>
+				<SwitchContainer Name="Monster" ID="{AE57C1DD-BD90-46C4-BBBB-B91BAA1081DD}" ShortID="703696618">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="None" ID="{E3747715-7AFA-433E-BC53-920FAF82AE4C}" WorkUnitID="{70325854-2ABD-4C17-B40F-BA0BC4A156EF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Monster" ID="{609EE9F8-2368-422B-9D03-4D29F42F9DFD}" WorkUnitID="{70325854-2ABD-4C17-B40F-BA0BC4A156EF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Eye_Stage_2" ID="{7FCD51C0-E913-4CE2-80DC-AC0180D4EEAF}" ShortID="45650546">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Eye_Stage_2" ID="{D054571A-555A-471C-B14A-F843D3B65C94}" ShortID="153570943">
+									<Language>SFX</Language>
+									<AudioFile>Eye_Stage_2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Eye_Stage_2" ID="{D054571A-555A-471C-B14A-F843D3B65C94}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Eye_Stage_3" ID="{0954B7F3-3595-46BF-B15B-296D3B6C46F4}" ShortID="720186157">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Eye_Stage_3" ID="{FF2B2D73-1D9E-4A97-B0C0-E1E92EA4129D}" ShortID="60474703">
+									<Language>SFX</Language>
+									<AudioFile>Eye_Stage_3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Eye_Stage_3" ID="{FF2B2D73-1D9E-4A97-B0C0-E1E92EA4129D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Stage_1" ID="{12C72ABC-6C0C-4135-BE5F-70D3F2D3E2A1}" ShortID="3950429">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Eye_Stage1" ID="{A5140384-25DA-4800-83FB-AFAFE8C3FD94}" ShortID="731681483">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Eye_Stage1" ID="{095EC1E8-C6A1-4175-A3BC-0C8E0AC24CBC}" ShortID="916734693">
+											<Language>SFX</Language>
+											<AudioFile>Eye_Stage1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Eye_Stage1" ID="{095EC1E8-C6A1-4175-A3BC-0C8E0AC24CBC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Stage_1" ID="{12C72ABC-6C0C-4135-BE5F-70D3F2D3E2A1}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Eye_Stage_2" ID="{7FCD51C0-E913-4CE2-80DC-AC0180D4EEAF}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Eye_Stage_3" ID="{0954B7F3-3595-46BF-B15B-296D3B6C46F4}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="mittleresAuge" ID="{5AF3FE37-04C1-420D-AAE1-F18D9DDFAF7B}"/>
+								<ItemList>
+									<ItemRef Name="Eye_Stage_2" ID="{7FCD51C0-E913-4CE2-80DC-AC0180D4EEAF}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="vollesAuge" ID="{0546F9B0-75F4-474A-8761-63B5ADCB26B5}"/>
+								<ItemList>
+									<ItemRef Name="Eye_Stage_3" ID="{0954B7F3-3595-46BF-B15B-296D3B6C46F4}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

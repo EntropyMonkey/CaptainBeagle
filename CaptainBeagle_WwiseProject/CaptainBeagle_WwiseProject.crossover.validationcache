@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="94">
-	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1556381969" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1556400144" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1556373301" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1556354758" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\CaptainBeagle_WwiseProject.crossover.wsettings" DateLow="1556386133" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\CaptainBeagle_WwiseProject.crossover.wsettings" DateLow="1556442707" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\CaptainBeagle_WwiseProject.wproj" DateLow="1556354758" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1556373301" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1556354758" DateHigh="0"/>
@@ -11,8 +11,8 @@
 	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1556354758" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1556373301" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Effects\Factory Effects.wwu" DateLow="1556381969" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Events\Default Work Unit.wwu" DateLow="1556381969" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1556373301" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Events\Default Work Unit.wwu" DateLow="1556392364" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1556400144" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1556354758" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1556381969" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1556354758" DateHigh="0"/>
@@ -20,8 +20,8 @@
 	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1556354758" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1556354758" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Queries\Factory Queries.wwu" DateLow="1556354758" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1556354758" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1556386122" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1556400144" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1556442687" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\States\Default Work Unit.wwu" DateLow="1556373301" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1556354758" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\CaptainBeagle\CaptainBeagle_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1556373301" DateHigh="0"/>

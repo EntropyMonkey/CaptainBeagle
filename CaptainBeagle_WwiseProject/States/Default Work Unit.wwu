@@ -19,6 +19,14 @@
 						<State Name="StartSchraube" ID="{163AA6EC-6A77-492F-818A-BE594813035D}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Monster" ID="{609EE9F8-2368-422B-9D03-4D29F42F9DFD}">
+					<ChildrenList>
+						<State Name="None" ID="{E3747715-7AFA-433E-BC53-920FAF82AE4C}"/>
+						<State Name="kleinesAuge" ID="{D3BD5BE5-D5F1-4B4D-B4B0-BB3A2EB73C4E}"/>
+						<State Name="mittleresAuge" ID="{5AF3FE37-04C1-420D-AAE1-F18D9DDFAF7B}"/>
+						<State Name="vollesAuge" ID="{0546F9B0-75F4-474A-8761-63B5ADCB26B5}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

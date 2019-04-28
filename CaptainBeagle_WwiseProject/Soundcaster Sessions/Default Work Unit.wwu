@@ -10,12 +10,16 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Notstop" ID="{A9F58484-74E7-4117-A1DB-F2423860CBA9}" WorkUnitID="{E25C8DBB-1994-420B-B036-7CA62764B70D}"/>
-							<Position X="1" Y="1"/>
+							<ObjectRef Name="Monster_Alt" ID="{32E3E2A0-71ED-4ACB-B10A-ADAC93B46E49}" WorkUnitID="{5771DD11-D97F-455B-8C1C-7A5071971BE4}"/>
+							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="PlayAlarm" ID="{EB9BA66D-872F-4C0C-9BC2-8D42B6CC5400}" WorkUnitID="{E25C8DBB-1994-420B-B036-7CA62764B70D}"/>
 							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Notstop" ID="{A9F58484-74E7-4117-A1DB-F2423860CBA9}" WorkUnitID="{E25C8DBB-1994-420B-B036-7CA62764B70D}"/>
+							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="StopAlarm" ID="{40124822-877F-43D2-AD54-C3EDC16CF8C7}" WorkUnitID="{E25C8DBB-1994-420B-B036-7CA62764B70D}"/>
@@ -29,14 +33,15 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Accellerate" ID="{FB8F10CE-073E-40EE-BC67-822321EB4272}"/>
-							<Value>6</Value>
+							<Value>4.776</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="MonsterStages" ID="{AA90A03E-D058-4AEE-9591-001FEE4FF825}"/>
-							<Value>58.5283828382838</Value>
+							<Value>100</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="kleinesAuge" ID="{D3BD5BE5-D5F1-4B4D-B4B0-BB3A2EB73C4E}"/>
 						<CurrentStateRef Name="StartEngine" ID="{273D34C5-B6BE-4432-B796-A985477204D5}"/>
 						<CurrentStateRef Name="StartSchraube" ID="{163AA6EC-6A77-492F-818A-BE594813035D}"/>
 					</CurrentStateList>
