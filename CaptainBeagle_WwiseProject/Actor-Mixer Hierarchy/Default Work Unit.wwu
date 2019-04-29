@@ -3,316 +3,16 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{5771DD11-D97F-455B-8C1C-7A5071971BE4}" PersistMode="Standalone">
 			<ChildrenList>
-				<SwitchContainer Name="EngineSystem" ID="{82A00311-6BFB-46EE-944D-227F5494B658}" ShortID="987695379">
-					<PropertyList>
-						<Property Name="SwitchBehavior" Type="int16" Value="1"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-7</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
-						</Reference>
-						<Reference Name="DefaultSwitchOrState">
-							<ObjectRef Name="None" ID="{F1F87CB3-BE0C-4391-9346-8F5166A16EE6}" WorkUnitID="{70325854-2ABD-4C17-B40F-BA0BC4A156EF}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
-						</Reference>
-						<Reference Name="SwitchGroupOrStateGroup">
-							<ObjectRef Name="Engine" ID="{2DA27F56-68CD-4D7F-B4C2-78510ED71565}" WorkUnitID="{70325854-2ABD-4C17-B40F-BA0BC4A156EF}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<RandomSequenceContainer Name="EngineStart" ID="{2A012021-490B-43DB-86ED-D4ED7CDE0971}" ShortID="1043303961">
-							<PropertyList>
-								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
-								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
-								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="Starter" ID="{762CA574-1B4C-45BB-A0ED-A8331DDD9C41}" ShortID="134605837">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="EngineStart" ID="{D052DA66-1753-46F6-B602-CE1341EB2CAC}" ShortID="724818442">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="EngineStart" ID="{AE9DE065-4BD9-4968-9AED-E4286295036F}" ShortID="649598248">
-													<Language>SFX</Language>
-													<AudioFile>EngineStart.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="EngineStart" ID="{AE9DE065-4BD9-4968-9AED-E4286295036F}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="EngineIdle" ID="{BFACE579-C8BA-423C-A12F-66153B4C6AC9}" ShortID="377702538">
-									<PropertyList>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-5</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Engine_Idle" ID="{69F36263-1BF6-4118-B153-BA8356974F4C}" ShortID="966171829">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="EngineIdle" ID="{E1F96CF9-24CE-4C04-BFC7-9F6AD5F5116B}" ShortID="316727210">
-													<Language>SFX</Language>
-													<AudioFile>EngineIdle.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="EngineIdle" ID="{E1F96CF9-24CE-4C04-BFC7-9F6AD5F5116B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-							</ChildrenList>
-							<StateInfo>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="Engine" ID="{2DA27F56-68CD-4D7F-B4C2-78510ED71565}"/>
-									</StateGroupInfo>
-								</StateGroupList>
-								<CustomStateList>
-									<CustomState>
-										<StateRef Name="StartEngine" ID="{273D34C5-B6BE-4432-B796-A985477204D5}"/>
-										<CustomState Name="" ID="{827AC76F-0B20-4173-997F-091A175EC385}" ShortID="997335849"/>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="StopEngine" ID="{60185986-0638-4DD0-9913-EFE71232F718}"/>
-										<CustomState Name="" ID="{06B252D1-E7D8-4D29-BF55-B235EC23E6E9}" ShortID="660715540"/>
-									</CustomState>
-								</CustomStateList>
-							</StateInfo>
-							<Playlist>
-								<ItemRef Name="Starter" ID="{762CA574-1B4C-45BB-A0ED-A8331DDD9C41}"/>
-								<ItemRef Name="EngineIdle" ID="{BFACE579-C8BA-423C-A12F-66153B4C6AC9}"/>
-							</Playlist>
-						</RandomSequenceContainer>
-						<Sound Name="EngineStop" ID="{E2D1BF67-D651-46DB-97AD-3D1CE7BB3AA7}" ShortID="681996376">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="EngineStop" ID="{2C6FC567-0BE0-4CD0-989A-492C1CF38837}" ShortID="90595530">
-									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.534207490866716"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>EngineStop.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<StateInfo>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="Engine" ID="{2DA27F56-68CD-4D7F-B4C2-78510ED71565}"/>
-									</StateGroupInfo>
-								</StateGroupList>
-								<CustomStateList>
-									<CustomState>
-										<StateRef Name="StartEngine" ID="{273D34C5-B6BE-4432-B796-A985477204D5}"/>
-										<CustomState Name="" ID="{0A90FDA0-15BC-4599-B5E6-3E85F5BE9DC5}" ShortID="45228962"/>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="StopEngine" ID="{60185986-0638-4DD0-9913-EFE71232F718}"/>
-										<CustomState Name="" ID="{BBE8FC83-9F43-4B65-A822-C5C1760F93B6}" ShortID="876533066"/>
-									</CustomState>
-								</CustomStateList>
-							</StateInfo>
-							<ActiveSourceList>
-								<ActiveSource Name="EngineStop" ID="{2C6FC567-0BE0-4CD0-989A-492C1CF38837}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-					<GroupingInfo>
-						<GroupingBehaviorList>
-							<GroupingBehavior>
-								<ItemRef Name="EngineStart" ID="{2A012021-490B-43DB-86ED-D4ED7CDE0971}"/>
-								<PropertyList>
-									<Property Name="FadeOutTime" Type="Real64">
-										<ValueList>
-											<Value>0.5</Value>
-										</ValueList>
-									</Property>
-								</PropertyList>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="EngineStop" ID="{E2D1BF67-D651-46DB-97AD-3D1CE7BB3AA7}"/>
-								<PropertyList>
-									<Property Name="FadeOutTime" Type="Real64">
-										<ValueList>
-											<Value>0.1</Value>
-										</ValueList>
-									</Property>
-								</PropertyList>
-							</GroupingBehavior>
-						</GroupingBehaviorList>
-						<GroupingList>
-							<Grouping>
-								<SwitchRef Name="StopEngine" ID="{60185986-0638-4DD0-9913-EFE71232F718}"/>
-								<ItemList>
-									<ItemRef Name="EngineStop" ID="{E2D1BF67-D651-46DB-97AD-3D1CE7BB3AA7}"/>
-								</ItemList>
-							</Grouping>
-							<Grouping>
-								<SwitchRef Name="StartEngine" ID="{273D34C5-B6BE-4432-B796-A985477204D5}"/>
-								<ItemList>
-									<ItemRef Name="EngineStart" ID="{2A012021-490B-43DB-86ED-D4ED7CDE0971}"/>
-								</ItemList>
-							</Grouping>
-						</GroupingList>
-					</GroupingInfo>
-				</SwitchContainer>
-				<SwitchContainer Name="SchraubenSystem" ID="{F348F358-3EA7-439C-9663-FCCD137B3742}" ShortID="383406175">
-					<PropertyList>
-						<Property Name="SwitchBehavior" Type="int16" Value="1"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>3</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
-						</Reference>
-						<Reference Name="DefaultSwitchOrState">
-							<ObjectRef Name="None" ID="{2F8C16E2-95CC-4BD9-8E2D-F9E486946817}" WorkUnitID="{70325854-2ABD-4C17-B40F-BA0BC4A156EF}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
-						</Reference>
-						<Reference Name="SwitchGroupOrStateGroup">
-							<ObjectRef Name="Schraube" ID="{74E99E24-C867-4F94-8994-044E811ACA77}" WorkUnitID="{70325854-2ABD-4C17-B40F-BA0BC4A156EF}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<RandomSequenceContainer Name="Schiffschraube" ID="{B34B6B44-2C57-43A7-8D2D-BE037B5926F3}" ShortID="449239902">
-							<PropertyList>
-								<Property Name="OverrideEffect" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="2"/>
-								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
-								</Reference>
-								<Reference Name="Effect0" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
-									<ObjectRef Name="Schiffschraube_Wwise_Time_Stretch" ID="{90B6F26B-41F8-44F7-9A1A-0F9924C94660}" WorkUnitID="{919971D1-DB39-4C57-96D5-A5AA6BF116F2}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Schraube" ID="{E89D313B-41DD-430F-88BF-8C9F0F9E2AFC}" ShortID="445647294">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
-										</Reference>
-										<Reference Name="Effect0" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
-											<ObjectRef Name="Schiffschraube_Wwise_Time_Stretch" ID="{90B6F26B-41F8-44F7-9A1A-0F9924C94660}" WorkUnitID="{919971D1-DB39-4C57-96D5-A5AA6BF116F2}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="slowsteamengine" ID="{DC73AF79-7E53-4335-B98E-AB23520417B2}" ShortID="265574609">
-											<Language>SFX</Language>
-											<AudioFile>slowsteamengine.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="slowsteamengine" ID="{DC73AF79-7E53-4335-B98E-AB23520417B2}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-					</ChildrenList>
-					<GroupingInfo>
-						<GroupingBehaviorList>
-							<GroupingBehavior>
-								<ItemRef Name="Schiffschraube" ID="{B34B6B44-2C57-43A7-8D2D-BE037B5926F3}"/>
-							</GroupingBehavior>
-						</GroupingBehaviorList>
-						<GroupingList>
-							<Grouping>
-								<SwitchRef Name="StartSchraube" ID="{163AA6EC-6A77-492F-818A-BE594813035D}"/>
-								<ItemList>
-									<ItemRef Name="Schiffschraube" ID="{B34B6B44-2C57-43A7-8D2D-BE037B5926F3}"/>
-								</ItemList>
-							</Grouping>
-						</GroupingList>
-					</GroupingInfo>
-				</SwitchContainer>
 				<RandomSequenceContainer Name="AlarmClock" ID="{18C289BB-077E-4C43-9775-9230484B956D}" ShortID="1055559902">
 					<PropertyList>
 						<Property Name="OutputBusHighpass" Type="int16">
 							<ValueList>
 								<Value>47</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OutputBusLowpass" Type="int16">
+							<ValueList>
+								<Value>46</Value>
 							</ValueList>
 						</Property>
 						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
@@ -322,7 +22,7 @@
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-1</Value>
+								<Value>-11</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -331,7 +31,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+							<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -344,7 +44,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+									<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -387,7 +87,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+							<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -443,7 +143,7 @@
 							<ObjectRef Name="Room_Large" ID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+							<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -494,7 +194,7 @@
 									</Custom>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+									<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -611,7 +311,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+									<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -730,7 +430,7 @@
 						<Property Name="BlendBehavior" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-3</Value>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -739,200 +439,10 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+							<ObjectRef Name="Master Audio Bus" ID="{56D248CE-D09B-4BD2-AC8D-AB5DA16F85A0}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="New Sound SFX" ID="{2714A855-48CB-4727-A3CC-7EE586352CBA}" ShortID="897633975">
-							<PropertyList>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<SourcePlugin Name="Wwise Synth One" ID="{C175AA67-0A7A-47C1-BCD3-8D3754C14451}" ShortID="237183636" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
-									<PropertyList>
-										<Property Name="BaseFrequency" Type="Real32" Value="72">
-											<RTPCList>
-												<RTPC Name="" ID="{08F09EAD-36BB-46BA-B373-71654FF5EAA2}" ShortID="305899161">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<Custom>
-																<ModulatorLfo Name="Modulator LFO (Custom)" ID="{DD154DAA-D495-407F-B171-8953D63FB71B}" ShortID="219060777">
-																	<PropertyList>
-																		<Property Name="LfoFrequency" Type="Real64" Value="1.2">
-																			<RTPCList>
-																				<RTPC Name="" ID="{A1AA92AA-B83C-4452-AEE9-4470E4DE07D6}" ShortID="205708765">
-																					<ReferenceList>
-																						<Reference Name="ControlInput">
-																							<ObjectRef Name="MonsterStages" ID="{AA90A03E-D058-4AEE-9591-001FEE4FF825}" WorkUnitID="{52077B2F-6405-45A7-A131-DF64548C766C}"/>
-																						</Reference>
-																					</ReferenceList>
-																					<Curve Name="" ID="{9C655FC0-1DA4-4BE4-AC6D-FFC170F13687}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="5"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>1</YPos>
-																								<Flags>5</Flags>
-																								<SegmentShape>Exp3</SegmentShape>
-																							</Point>
-																							<Point>
-																								<XPos>100</XPos>
-																								<YPos>20000</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</RTPC>
-																			</RTPCList>
-																		</Property>
-																	</PropertyList>
-																</ModulatorLfo>
-															</Custom>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{C4A8AC4E-68EF-4CFC-9699-AB9F0F128CBE}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="5"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>26.91046</YPos>
-																<Flags>21</Flags>
-															</Point>
-															<Point>
-																<XPos>1</XPos>
-																<YPos>49.06536</YPos>
-																<Flags>53</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="NoiseLevel" Type="Real32" Value="-27">
-											<RTPCList>
-												<RTPC Name="" ID="{46539C70-CB81-4C8B-8164-930E549F85FE}" ShortID="198338267">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="MonsterStages" ID="{AA90A03E-D058-4AEE-9591-001FEE4FF825}" WorkUnitID="{52077B2F-6405-45A7-A131-DF64548C766C}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{5B921F18-D658-4E9D-B131-910BC908ED00}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-28.00484</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Exp3</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>-0.61337</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="Osc1Waveform" Type="int32" Value="2"/>
-										<Property Name="Osc2Waveform" Type="int32" Value="3"/>
-										<Property Name="OutputLevel" Type="Real32" Value="-5"/>
-										<Property Name="OverSampling" Type="bool" Value="False"/>
-									</PropertyList>
-									<Language>SFX</Language>
-								</SourcePlugin>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Wwise Synth One" ID="{C175AA67-0A7A-47C1-BCD3-8D3754C14451}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="New Sound SFX_01" ID="{D20176C3-B243-4595-82F3-739AA9506DF0}" ShortID="1031069021">
-							<PropertyList>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<SourcePlugin Name="Wwise Synth One" ID="{25794488-BE5F-4A56-A221-3D3AE867599F}" ShortID="661174819" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
-									<PropertyList>
-										<Property Name="BaseFrequency" Type="Real32" Value="993"/>
-										<Property Name="FmAmount" Type="Real32" Value="12.6"/>
-										<Property Name="NoiseLevel" Type="Real32" Value="-60"/>
-										<Property Name="Osc1Level" Type="Real32" Value="-35"/>
-										<Property Name="Osc1Waveform" Type="int32" Value="2"/>
-										<Property Name="Osc2Level" Type="Real32" Value="-78"/>
-										<Property Name="Osc2Waveform" Type="int32" Value="3"/>
-										<Property Name="OutputLevel" Type="Real32" Value="-5">
-											<RTPCList>
-												<RTPC Name="" ID="{99222F49-4218-4305-89F5-550EE49286EC}" ShortID="90084932">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<Custom>
-																<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{6AF761F2-3C8C-4078-98CB-EEA021DF66FB}" ShortID="5921881">
-																	<PropertyList>
-																		<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
-																	</PropertyList>
-																</ModulatorEnvelope>
-															</Custom>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{DE57DBE9-6A3C-4D9F-A742-BA775998E92F}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-96</YPos>
-																<Flags>21</Flags>
-															</Point>
-															<Point>
-																<XPos>1</XPos>
-																<YPos>0</YPos>
-																<Flags>53</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-									</PropertyList>
-									<Language>SFX</Language>
-								</SourcePlugin>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Wwise Synth One" ID="{25794488-BE5F-4A56-A221-3D3AE867599F}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<RandomSequenceContainer Name="Stage1" ID="{BACB3D3A-8356-4AE7-84B6-D1F172998257}" ShortID="976331817">
 							<PropertyList>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
@@ -944,7 +454,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+									<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -954,7 +464,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+											<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -987,7 +497,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+									<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -997,7 +507,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+											<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1030,7 +540,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+									<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1040,7 +550,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+											<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1105,123 +615,357 @@
 						</BlendTrack>
 					</BlendTrackList>
 				</BlendContainer>
-				<SwitchContainer Name="Monster" ID="{AE57C1DD-BD90-46C4-BBBB-B91BAA1081DD}" ShortID="703696618">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
-						</Reference>
-						<Reference Name="DefaultSwitchOrState">
-							<ObjectRef Name="None" ID="{E3747715-7AFA-433E-BC53-920FAF82AE4C}" WorkUnitID="{70325854-2ABD-4C17-B40F-BA0BC4A156EF}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
-						</Reference>
-						<Reference Name="SwitchGroupOrStateGroup">
-							<ObjectRef Name="Monster" ID="{609EE9F8-2368-422B-9D03-4D29F42F9DFD}" WorkUnitID="{70325854-2ABD-4C17-B40F-BA0BC4A156EF}"/>
-						</Reference>
-					</ReferenceList>
+				<Folder Name="Engine" ID="{EA8AD3E6-490D-4E5B-AD34-A94C9C2318C0}" ShortID="44213915">
 					<ChildrenList>
-						<Sound Name="Eye_Stage_2" ID="{7FCD51C0-E913-4CE2-80DC-AC0180D4EEAF}" ShortID="45650546">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Eye_Stage_2" ID="{D054571A-555A-471C-B14A-F843D3B65C94}" ShortID="153570943">
-									<Language>SFX</Language>
-									<AudioFile>Eye_Stage_2.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Eye_Stage_2" ID="{D054571A-555A-471C-B14A-F843D3B65C94}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Eye_Stage_3" ID="{0954B7F3-3595-46BF-B15B-296D3B6C46F4}" ShortID="720186157">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Eye_Stage_3" ID="{FF2B2D73-1D9E-4A97-B0C0-E1E92EA4129D}" ShortID="60474703">
-									<Language>SFX</Language>
-									<AudioFile>Eye_Stage_3.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Eye_Stage_3" ID="{FF2B2D73-1D9E-4A97-B0C0-E1E92EA4129D}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<RandomSequenceContainer Name="Stage_1" ID="{12C72ABC-6C0C-4135-BE5F-70D3F2D3E2A1}" ShortID="3950429">
+						<ActorMixer Name="Engine" ID="{8DF1CDF2-4E92-42D9-BB34-AC14B789ECAE}" ShortID="237002058">
 							<PropertyList>
-								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{896BBF71-738C-4A57-8C9D-FF21A48F553A}" ShortID="587608417">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Location_Reverb" ID="{837EDA7C-A23F-4FBD-8C9A-FD0A0CEBDEFD}" WorkUnitID="{52077B2F-6405-45A7-A131-DF64548C766C}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{08A4AFB1-9278-4F70-B679-3248A0AAAF97}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-8.75931</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+									<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Eye_Stage1" ID="{A5140384-25DA-4800-83FB-AFAFE8C3FD94}" ShortID="731681483">
+								<SwitchContainer Name="EngineSystem" ID="{82A00311-6BFB-46EE-944D-227F5494B658}" ShortID="987695379">
+									<PropertyList>
+										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-14</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
 										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="None" ID="{F1F87CB3-BE0C-4391-9346-8F5166A16EE6}" WorkUnitID="{70325854-2ABD-4C17-B40F-BA0BC4A156EF}"/>
+										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+											<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Engine" ID="{2DA27F56-68CD-4D7F-B4C2-78510ED71565}" WorkUnitID="{70325854-2ABD-4C17-B40F-BA0BC4A156EF}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Eye_Stage1" ID="{095EC1E8-C6A1-4175-A3BC-0C8E0AC24CBC}" ShortID="916734693">
-											<Language>SFX</Language>
-											<AudioFile>Eye_Stage1.wav</AudioFile>
-										</AudioFileSource>
+										<RandomSequenceContainer Name="EngineStart" ID="{2A012021-490B-43DB-86ED-D4ED7CDE0971}" ShortID="1043303961">
+											<PropertyList>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Starter" ID="{762CA574-1B4C-45BB-A0ED-A8331DDD9C41}" ShortID="134605837">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="EngineStart" ID="{D052DA66-1753-46F6-B602-CE1341EB2CAC}" ShortID="724818442">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="EngineStart" ID="{AE9DE065-4BD9-4968-9AED-E4286295036F}" ShortID="649598248">
+																	<Language>SFX</Language>
+																	<AudioFile>EngineStart.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="EngineStart" ID="{AE9DE065-4BD9-4968-9AED-E4286295036F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="EngineIdle" ID="{BFACE579-C8BA-423C-A12F-66153B4C6AC9}" ShortID="377702538">
+													<PropertyList>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Engine_Idle" ID="{69F36263-1BF6-4118-B153-BA8356974F4C}" ShortID="966171829">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="EngineIdle" ID="{E1F96CF9-24CE-4C04-BFC7-9F6AD5F5116B}" ShortID="316727210">
+																	<Language>SFX</Language>
+																	<AudioFile>EngineIdle.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="EngineIdle" ID="{E1F96CF9-24CE-4C04-BFC7-9F6AD5F5116B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Engine" ID="{2DA27F56-68CD-4D7F-B4C2-78510ED71565}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="StartEngine" ID="{273D34C5-B6BE-4432-B796-A985477204D5}"/>
+														<CustomState Name="" ID="{827AC76F-0B20-4173-997F-091A175EC385}" ShortID="997335849"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="StopEngine" ID="{60185986-0638-4DD0-9913-EFE71232F718}"/>
+														<CustomState Name="" ID="{06B252D1-E7D8-4D29-BF55-B235EC23E6E9}" ShortID="660715540"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<Playlist>
+												<ItemRef Name="Starter" ID="{762CA574-1B4C-45BB-A0ED-A8331DDD9C41}"/>
+												<ItemRef Name="EngineIdle" ID="{BFACE579-C8BA-423C-A12F-66153B4C6AC9}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+										<Sound Name="EngineStop" ID="{E2D1BF67-D651-46DB-97AD-3D1CE7BB3AA7}" ShortID="681996376">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EngineStop" ID="{2C6FC567-0BE0-4CD0-989A-492C1CF38837}" ShortID="90595530">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.534207490866716"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>EngineStop.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Engine" ID="{2DA27F56-68CD-4D7F-B4C2-78510ED71565}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="StartEngine" ID="{273D34C5-B6BE-4432-B796-A985477204D5}"/>
+														<CustomState Name="" ID="{0A90FDA0-15BC-4599-B5E6-3E85F5BE9DC5}" ShortID="45228962"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="StopEngine" ID="{60185986-0638-4DD0-9913-EFE71232F718}"/>
+														<CustomState Name="" ID="{BBE8FC83-9F43-4B65-A822-C5C1760F93B6}" ShortID="876533066"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="EngineStop" ID="{2C6FC567-0BE0-4CD0-989A-492C1CF38837}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Eye_Stage1" ID="{095EC1E8-C6A1-4175-A3BC-0C8E0AC24CBC}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="EngineStart" ID="{2A012021-490B-43DB-86ED-D4ED7CDE0971}"/>
+												<PropertyList>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>0.5</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="EngineStop" ID="{E2D1BF67-D651-46DB-97AD-3D1CE7BB3AA7}"/>
+												<PropertyList>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>0.1</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="StopEngine" ID="{60185986-0638-4DD0-9913-EFE71232F718}"/>
+												<ItemList>
+													<ItemRef Name="EngineStop" ID="{E2D1BF67-D651-46DB-97AD-3D1CE7BB3AA7}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="StartEngine" ID="{273D34C5-B6BE-4432-B796-A985477204D5}"/>
+												<ItemList>
+													<ItemRef Name="EngineStart" ID="{2A012021-490B-43DB-86ED-D4ED7CDE0971}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="SchraubenSystem" ID="{F348F358-3EA7-439C-9663-FCCD137B3742}" ShortID="383406175">
+									<PropertyList>
+										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="None" ID="{2F8C16E2-95CC-4BD9-8E2D-F9E486946817}" WorkUnitID="{70325854-2ABD-4C17-B40F-BA0BC4A156EF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Schraube" ID="{74E99E24-C867-4F94-8994-044E811ACA77}" WorkUnitID="{70325854-2ABD-4C17-B40F-BA0BC4A156EF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Schiffschraube" ID="{B34B6B44-2C57-43A7-8D2D-BE037B5926F3}" ShortID="449239902">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="2"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+													<ObjectRef Name="Schiffschraube_Wwise_Time_Stretch" ID="{90B6F26B-41F8-44F7-9A1A-0F9924C94660}" WorkUnitID="{919971D1-DB39-4C57-96D5-A5AA6BF116F2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Schraube" ID="{E89D313B-41DD-430F-88BF-8C9F0F9E2AFC}" ShortID="445647294">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30A13FAB-6B58-4394-A7F5-876CCDA2C049}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+															<ObjectRef Name="Schiffschraube_Wwise_Time_Stretch" ID="{90B6F26B-41F8-44F7-9A1A-0F9924C94660}" WorkUnitID="{919971D1-DB39-4C57-96D5-A5AA6BF116F2}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="slowsteamengine" ID="{DC73AF79-7E53-4335-B98E-AB23520417B2}" ShortID="265574609">
+															<Language>SFX</Language>
+															<AudioFile>slowsteamengine.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="slowsteamengine" ID="{DC73AF79-7E53-4335-B98E-AB23520417B2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Schiffschraube" ID="{B34B6B44-2C57-43A7-8D2D-BE037B5926F3}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="StartSchraube" ID="{163AA6EC-6A77-492F-818A-BE594813035D}"/>
+												<ItemList>
+													<ItemRef Name="Schiffschraube" ID="{B34B6B44-2C57-43A7-8D2D-BE037B5926F3}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
-						</RandomSequenceContainer>
+						</ActorMixer>
 					</ChildrenList>
-					<GroupingInfo>
-						<GroupingBehaviorList>
-							<GroupingBehavior>
-								<ItemRef Name="Stage_1" ID="{12C72ABC-6C0C-4135-BE5F-70D3F2D3E2A1}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="Eye_Stage_2" ID="{7FCD51C0-E913-4CE2-80DC-AC0180D4EEAF}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="Eye_Stage_3" ID="{0954B7F3-3595-46BF-B15B-296D3B6C46F4}"/>
-							</GroupingBehavior>
-						</GroupingBehaviorList>
-						<GroupingList>
-							<Grouping>
-								<SwitchRef Name="mittleresAuge" ID="{5AF3FE37-04C1-420D-AAE1-F18D9DDFAF7B}"/>
-								<ItemList>
-									<ItemRef Name="Eye_Stage_2" ID="{7FCD51C0-E913-4CE2-80DC-AC0180D4EEAF}"/>
-								</ItemList>
-							</Grouping>
-							<Grouping>
-								<SwitchRef Name="vollesAuge" ID="{0546F9B0-75F4-474A-8761-63B5ADCB26B5}"/>
-								<ItemList>
-									<ItemRef Name="Eye_Stage_3" ID="{0954B7F3-3595-46BF-B15B-296D3B6C46F4}"/>
-								</ItemList>
-							</Grouping>
-						</GroupingList>
-					</GroupingInfo>
-				</SwitchContainer>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

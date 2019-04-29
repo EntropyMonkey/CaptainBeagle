@@ -14,6 +14,7 @@
 						<Property Name="RTPCRamping" Type="int16" Value="1"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="Location_Reverb" ID="{837EDA7C-A23F-4FBD-8C9A-FD0A0CEBDEFD}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

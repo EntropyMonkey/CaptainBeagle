@@ -33,15 +33,18 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Accellerate" ID="{FB8F10CE-073E-40EE-BC67-822321EB4272}"/>
-							<Value>4.776</Value>
+							<Value>6</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="MonsterStages" ID="{AA90A03E-D058-4AEE-9591-001FEE4FF825}"/>
-							<Value>100</Value>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Location_Reverb" ID="{837EDA7C-A23F-4FBD-8C9A-FD0A0CEBDEFD}"/>
+							<Value>2.23053171999563</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="kleinesAuge" ID="{D3BD5BE5-D5F1-4B4D-B4B0-BB3A2EB73C4E}"/>
 						<CurrentStateRef Name="StartEngine" ID="{273D34C5-B6BE-4432-B796-A985477204D5}"/>
 						<CurrentStateRef Name="StartSchraube" ID="{163AA6EC-6A77-492F-818A-BE594813035D}"/>
 					</CurrentStateList>

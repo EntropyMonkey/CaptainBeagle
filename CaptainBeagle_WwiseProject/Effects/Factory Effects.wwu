@@ -1241,38 +1241,91 @@
 										<Property Name="DecayTime" Type="Real32" Value="1.8"/>
 										<Property Name="Density" Type="Real32" Value="70"/>
 										<Property Name="Diffusion" Type="Real32" Value="46"/>
-										<Property Name="DryLevel" Type="Real32" Value="-37.3"/>
-										<Property Name="ERLevel" Type="Real32" Value="-23"/>
-										<Property Name="Filter1Freq" Type="Real32" Value="590"/>
-										<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
-										<Property Name="Filter3Gain" Type="Real32" Value="-4.5"/>
-										<Property Name="HFDamping" Type="Real32" Value="2.7"/>
-										<Property Name="PreDelay" Type="Real32" Value="35"/>
-										<Property Name="Quality" Type="int32" Value="12"/>
-										<Property Name="ReverbLevel" Type="Real32" Value="-15">
+										<Property Name="DryLevel" Type="Real32" Value="-3.3">
 											<RTPCList>
-												<RTPC Name="" ID="{6CED1744-837D-40BA-A858-D2265629CEC9}" ShortID="242095112">
+												<RTPC Name="" ID="{E32FC712-A0CF-4D7F-BDB5-8CD0A309CB29}" ShortID="351841495">
 													<ReferenceList>
 														<Reference Name="ControlInput">
-															<Custom>
-																<ModulatorLfo Name="Modulator LFO (Custom)" ID="{7B7B0E8C-3F73-4485-AD39-C2106300770B}" ShortID="475301504"/>
-															</Custom>
+															<ObjectRef Name="Location_Reverb" ID="{837EDA7C-A23F-4FBD-8C9A-FD0A0CEBDEFD}" WorkUnitID="{52077B2F-6405-45A7-A131-DF64548C766C}"/>
 														</Reference>
 													</ReferenceList>
-													<Curve Name="" ID="{A3D94B6C-0A37-432D-90B5-E31E0C939307}">
+													<Curve Name="" ID="{2293E652-8F55-4B6C-A1A5-161FB15DFE7C}">
 														<PropertyList>
 															<Property Name="Flags" Type="int32" Value="3"/>
 														</PropertyList>
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>-96.3000030517578</YPos>
-																<Flags>21</Flags>
+																<YPos>6.61965</YPos>
+																<Flags>5</Flags>
 															</Point>
 															<Point>
-																<XPos>1</XPos>
+																<XPos>100</XPos>
 																<YPos>0</YPos>
-																<Flags>53</Flags>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="ERLevel" Type="Real32" Value="-45">
+											<RTPCList>
+												<RTPC Name="" ID="{6F060771-0D1E-4695-AD2F-8261C0A9A081}" ShortID="437930104">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Location_Reverb" ID="{837EDA7C-A23F-4FBD-8C9A-FD0A0CEBDEFD}" WorkUnitID="{52077B2F-6405-45A7-A131-DF64548C766C}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{543C0417-E37F-4C93-8DF3-12A06C04A89A}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>96.3</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>2.69386</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Filter1Freq" Type="Real32" Value="590"/>
+										<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
+										<Property Name="Filter3Gain" Type="Real32" Value="-4.5"/>
+										<Property Name="HFDamping" Type="Real32" Value="2.7"/>
+										<Property Name="PreDelay" Type="Real32" Value="35"/>
+										<Property Name="Quality" Type="int32" Value="12"/>
+										<Property Name="ReverbLevel" Type="Real32">
+											<RTPCList>
+												<RTPC Name="" ID="{304674D2-B423-421C-8BFB-C458F60DCABD}" ShortID="358437276">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Location_Reverb" ID="{837EDA7C-A23F-4FBD-8C9A-FD0A0CEBDEFD}" WorkUnitID="{52077B2F-6405-45A7-A131-DF64548C766C}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{2FA3697B-EDBE-41B8-A000-2C1625B64DCE}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-9.98802</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
 															</Point>
 														</PointList>
 													</Curve>

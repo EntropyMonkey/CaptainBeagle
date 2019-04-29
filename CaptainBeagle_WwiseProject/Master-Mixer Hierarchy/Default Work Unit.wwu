@@ -3,13 +3,20 @@
 	<Busses>
 		<WorkUnit Name="Default Work Unit" ID="{4BD65090-5624-49CD-8820-AD345F18C7AF}" PersistMode="Standalone">
 			<ChildrenList>
-				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+				<Bus Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{383A364C-8451-438B-B528-045699C723FD}" WorkUnitID="{B3B02865-B647-433E-8F38-5D40A111936C}"/>
 						</Reference>
 						<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-							<ObjectRef Name="Aluminium_Tank" ID="{0D20C91A-F750-47E0-AE32-00E5F2AA1272}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+							<ObjectRef Name="Room_Large" ID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+				<Bus Name="Master Audio Bus" ID="{56D248CE-D09B-4BD2-AC8D-AB5DA16F85A0}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{383A364C-8451-438B-B528-045699C723FD}" WorkUnitID="{B3B02865-B647-433E-8F38-5D40A111936C}"/>
 						</Reference>
 					</ReferenceList>
 				</Bus>
