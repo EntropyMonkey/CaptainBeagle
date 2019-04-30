@@ -5,9 +5,12 @@
 			<ChildrenList>
 				<SoundBank Name="DeadAgainBank" ID="{25D36967-35C6-43A2-A13B-D7F4040B2B62}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Reverb Environment" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Default Work Unit" ID="{E25C8DBB-1994-420B-B036-7CA62764B70D}" WorkUnitID="{E25C8DBB-1994-420B-B036-7CA62764B70D}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Interactive Music Hierarchy" ID="{49FED366-B530-42A8-993B-924873AAB707}" WorkUnitID="{49FED366-B530-42A8-993B-924873AAB707}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Default Work Unit" ID="{5771DD11-D97F-455B-8C1C-7A5071971BE4}" WorkUnitID="{5771DD11-D97F-455B-8C1C-7A5071971BE4}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Default Work Unit" ID="{4BD65090-5624-49CD-8820-AD345F18C7AF}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Master Audio Bus" ID="{56D248CE-D09B-4BD2-AC8D-AB5DA16F85A0}" WorkUnitID="{4BD65090-5624-49CD-8820-AD345F18C7AF}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

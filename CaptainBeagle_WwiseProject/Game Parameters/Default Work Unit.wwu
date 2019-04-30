@@ -5,16 +5,21 @@
 			<ChildrenList>
 				<GameParameter Name="Accellerate" ID="{FB8F10CE-073E-40EE-BC67-822321EB4272}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="6"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="Max" Type="Real64" Value="6"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="MonsterStages" ID="{AA90A03E-D058-4AEE-9591-001FEE4FF825}">
 					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="RTPCRamping" Type="int16" Value="1"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="Location_Reverb" ID="{837EDA7C-A23F-4FBD-8C9A-FD0A0CEBDEFD}"/>
+				<GameParameter Name="Location_Reverb" ID="{837EDA7C-A23F-4FBD-8C9A-FD0A0CEBDEFD}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

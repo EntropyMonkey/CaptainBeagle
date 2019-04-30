@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>D:\Work In Progress\Nordic Game Jam 19\CaptainBeagle\CaptainBeagle_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Work In Progress\Nordic Game Jam 19\CaptainBeagle\CaptainBeagle_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Work In Progress\Nordic Game Jam 19\CaptainBeagle\Content\Sounds\GeneratedSoundbanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>/Users/janflessel/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/y:/CaptainBeagle/CaptainBeagle_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/janflessel/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/y:/CaptainBeagle/CaptainBeagle_WwiseProject/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/janflessel/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/y:/CaptainBeagle/Content/Sounds/GeneratedSoundbanks/Windows/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Work In Progress\Nordic Game Jam 19\CaptainBeagle\CaptainBeagle_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/janflessel/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/y:/CaptainBeagle/CaptainBeagle_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -30,43 +30,43 @@
 			<IncludedMemoryFiles>
 				<File Id="90595530" Language="SFX">
 					<ShortName>EngineStop.wav</ShortName>
-					<Path>SFX\EngineStop_11170445.wem</Path>
+					<Path>SFX/EngineStop_11170445.wem</Path>
+				</File>
+				<File Id="165186101" Language="SFX">
+					<ShortName>Eye_Stage_2.wav</ShortName>
+					<Path>SFX/Eye_Stage_2_28B64F41.wem</Path>
 				</File>
 				<File Id="265574609" Language="SFX">
 					<ShortName>slowsteamengine.wav</ShortName>
-					<Path>SFX\slowsteamengine_D79FB2B7.wem</Path>
+					<Path>SFX/slowsteamengine_D79FB2B7.wem</Path>
 				</File>
 				<File Id="316727210" Language="SFX">
 					<ShortName>EngineIdle.wav</ShortName>
-					<Path>SFX\EngineIdle_10C4C929.wem</Path>
+					<Path>SFX/EngineIdle_10C4C929.wem</Path>
+				</File>
+				<File Id="320808056" Language="SFX">
+					<ShortName>Eye_Stage_3.wav</ShortName>
+					<Path>SFX/Eye_Stage_3_A729AEC4.wem</Path>
 				</File>
 				<File Id="350209058" Language="SFX">
 					<ShortName>Click.wav</ShortName>
-					<Path>SFX\Click_10C4C929.wem</Path>
+					<Path>SFX/Click_10C4C929.wem</Path>
 				</File>
 				<File Id="386147942" Language="SFX">
 					<ShortName>whale.wav</ShortName>
-					<Path>SFX\whale_10C4C929.wem</Path>
+					<Path>SFX/whale_10C4C929.wem</Path>
 				</File>
 				<File Id="649598248" Language="SFX">
 					<ShortName>EngineStart.wav</ShortName>
-					<Path>SFX\EngineStart_10C4C929.wem</Path>
+					<Path>SFX/EngineStart_10C4C929.wem</Path>
 				</File>
-				<File Id="690914345" Language="SFX">
-					<ShortName>Eye_Stage1_start.wav</ShortName>
-					<Path>SFX\Eye_Stage1_start_10C4C929.wem</Path>
+				<File Id="727144478" Language="SFX">
+					<ShortName>Eye_Stage1_1.wav</ShortName>
+					<Path>SFX/Eye_Stage1_1_330DB1BB.wem</Path>
 				</File>
 				<File Id="737303825" Language="SFX">
 					<ShortName>alarm-clock.wav</ShortName>
-					<Path>SFX\alarm-clock_5AE72BA2.wem</Path>
-				</File>
-				<File Id="1019047120" Language="SFX">
-					<ShortName>Eye_Stage1_middle.wav</ShortName>
-					<Path>SFX\Eye_Stage1_middle_D79FB2B7.wem</Path>
-				</File>
-				<File Id="1073037191" Language="SFX">
-					<ShortName>Eye_Stage1_fade.wav</ShortName>
-					<Path>SFX\Eye_Stage1_fade_10C4C929.wem</Path>
+					<Path>SFX/alarm-clock_5AE72BA2.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

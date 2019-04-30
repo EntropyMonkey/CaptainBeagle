@@ -131,7 +131,7 @@
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-7</Value>
+								<Value>-3</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -620,6 +620,9 @@
 						<ActorMixer Name="Engine" ID="{8DF1CDF2-4E92-42D9-BB34-AC14B789ECAE}" ShortID="237002058">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{896BBF71-738C-4A57-8C9D-FF21A48F553A}" ShortID="587608417">
 											<ReferenceList>
@@ -879,7 +882,7 @@
 										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-2</Value>
+												<Value>-11</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

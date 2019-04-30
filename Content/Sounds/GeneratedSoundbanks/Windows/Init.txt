@@ -9,11 +9,15 @@ State	ID	Name	State Group			Notes
 	0	None	Schraube			
 	1460194106	StartSchraube	Schraube			
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3941374343	Location_Reverb			\Default Work Unit\Location_Reverb	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	306125398	Reverb Environment			\Default Work Unit\Reverb Environment	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Effect plug-ins	ID	Name	Type				Notes
-	3290519051	Aluminium_Tank	Wwise RoomVerb			
+	602546716	Room_Large	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
